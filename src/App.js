@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import QuoteDisplay from './QuoteDisplay'
 
@@ -18,7 +17,7 @@ class App extends Component {
   }
 
   fetchRandomQuote() {
-    fetch("http://quotes.rest/qod.json")
+    fetch("https://quotes.rest/qod.json")
     .then(response => response.json())
 	.then(quote => { 
 		if (quote.contents) {
