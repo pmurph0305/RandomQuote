@@ -1,0 +1,35 @@
+/* Container that holds the quote */
+.quoteContainer {
+    width: 75%;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Line after the container at the bottom */
+.quoteContainer::after {
+    background-color: darkgrey; 
+    content: '';
+    height: 1px;
+    width: 50px;
+}
+
+/* Quote text. */
+.quoteText {
+    margin-top: 15vh;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    white-space: pre-wrap;
+    text-align: left;
+    padding-right: 5px;
+}
+
+/* Quote author name */
+.quoteAuthor {
+    margin: 1rem;
+    text-align: right;
+    color: lightgray;
+}
+
